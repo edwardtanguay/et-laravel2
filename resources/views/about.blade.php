@@ -38,7 +38,6 @@
 		<li>laravel-blade (syntax highlighting)</li>
     </ul>
 
-@endunless
 </body>
 
 </html>
