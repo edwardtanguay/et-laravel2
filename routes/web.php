@@ -28,5 +28,6 @@ Route::get('/articles/{id}/{lang?}', function ($id, $lang = 'english') {
 Route::redirect('/toparticle', '/articles/555');
 
 Route::get('/about', function () {
-	return view('about', ['message' => 'This is information about the site.']);
+	$colors = array('red', 'green', 'yellow'); 
+	return view('about', ['message' => 'This is information about the site.', 'colors' => $colors]);
 });
