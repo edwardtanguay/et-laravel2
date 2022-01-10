@@ -14,20 +14,24 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('pages/welcome');
+	return view('pages/welcome');
 });
 
 Route::get('/info', function () {
-    return view('pages/info');
+	return view('pages/info');
 });
 
-Route::get('/articles/{id}/{lang?}', function ($id, $lang = 'english') {
-    return ("showing article #$id ($lang)");
+Route::get('/articles', function () {
+	return view('pages/articles');
+});
+
+Route::get('/article/{id}/{lang?}', function ($id, $lang = 'english') {
+	return view('pages/article', ['id' => $id, 'lang' => $lang]);
 })->where('id', '[0-9]+')->where('lang', '(english|german)');
 
-Route::redirect('/toparticle', '/articles/555');
+Route::redirect('/toparticle', '/article/555');
 
 Route::get('/about', function () {
-	$colors = array('red', 'green', 'yellow'); 
+	$colors = array('red', 'green', 'yellow');
 	return view('pages/about', ['message' => 'This is information about the site.', 'colors' => $colors]);
 });
