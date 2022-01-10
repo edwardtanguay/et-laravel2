@@ -6,6 +6,8 @@
 	<title>Laravel Site</title>
 </head>
 <body>
+<a href="/">Welcome</a> | <a href="/info">Info Page</a> | <a href="/about">About</a>
+<hr>
 	<h1>Info</h1>
 	<p>This is the info page.</p>
 	<p>Go back to the <a href="/">Welcome Page</a>.</p>

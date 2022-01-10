@@ -26,3 +26,7 @@ Route::get('/articles/{id}/{lang?}', function ($id, $lang = 'english') {
 })->where('id', '[0-9]+')->where('lang', '(english|german)');
 
 Route::redirect('/toparticle', '/articles/555');
+
+Route::get('/about', function () {
+	return view('about', ['message' => 'This is information about the site.']);
+});
