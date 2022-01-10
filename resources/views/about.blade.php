@@ -14,6 +14,7 @@
     <p>{{ $message }}</p>
     <p>This current date and time is {{ date('Y-m-d H:i:s') }}</p>
 
+    <button>Test</button>
     <h2>Indexes</h2>
     @for ($i = 0; $i < 5; $i++)
         <div>The index is {{ $i }}</div>
@@ -23,6 +24,21 @@
     @foreach ($colors as $color)
         <div>{{ $color }}</div>
     @endforeach
+
+    <h2>Links</h2>
+    <ul>
+        <li><a href="https://www.digitalocean.com/community/tutorials/simple-laravel-layouts-using-blade">Blade
+                layouts</a></li>
+    </ul>
+
+    <h2>VSCode Extensions</h2>
+    <ul>
+        <li>Laravel Blade formatter</li>
+		<li>Laravel Blade Snippets</li>
+		<li>laravel-blade (syntax highlighting)</li>
+    </ul>
+
+@endunless
 </body>
 
 </html>
