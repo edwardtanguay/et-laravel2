@@ -15,9 +15,24 @@
 
     a {
         color: rgb(248, 248, 131);
+        text-decoration: none;
     }
-	a:hover {
-		color: yellow;
-	}
+
+    a:hover {
+        color: rgb(248, 248, 131);
+        text-decoration: none;
+    }
+
+    nav {
+        color: rgb(119, 81, 0);
+    }
+
+    nav a {
+        color: rgb(192, 131, 0);
+    }
+
+    nav a:hover {
+        color: rgb(197, 135, 0);
+    }
 
 </style>

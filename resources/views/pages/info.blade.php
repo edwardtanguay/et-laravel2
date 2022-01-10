@@ -6,8 +6,7 @@
 
 <body>
     <div class="container py-3">
-        <a href="/">Welcome</a> | <a href="/info">Info Page</a> | <a href="/about">About</a>
-        <hr>
+		@include('includes.navbar')
         <h1>Info</h1>
         <p>This is the info page.</p>
         <p>Go back to the <a href="/">Welcome Page</a>.</p>

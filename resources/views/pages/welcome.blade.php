@@ -6,8 +6,7 @@
 
 <body>
     <div class="container py-3">
-        <a href="/">Welcome</a> | <a href="/info">Info Page</a> | <a href="/about">About</a>
-        <hr>
+		@include('includes.navbar')
         <h1>Welcome</h1>
         <p>Welcome to this Laravel site.</p>
     </div>
