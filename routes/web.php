@@ -14,11 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('pages/welcome');
 });
 
 Route::get('/info', function () {
-    return view('info');
+    return view('pages/info');
 });
 
 Route::get('/articles/{id}/{lang?}', function ($id, $lang = 'english') {
@@ -29,5 +29,5 @@ Route::redirect('/toparticle', '/articles/555');
 
 Route::get('/about', function () {
 	$colors = array('red', 'green', 'yellow'); 
-	return view('about', ['message' => 'This is information about the site.', 'colors' => $colors]);
+	return view('pages/about', ['message' => 'This is information about the site.', 'colors' => $colors]);
 });
