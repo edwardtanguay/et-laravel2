@@ -12,7 +12,7 @@
 	<hr>
 	<h1>About</h1>
 	<p>{{$message}}</p>
-	<p>This current date and time is {{date('Y-m-d h:i:s')}}</p>
+	<p>This current date and time is {{date('Y-m-d H:i:s')}}</p>
 </body>
 
 </html>
