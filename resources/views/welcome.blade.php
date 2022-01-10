@@ -7,7 +7,7 @@
 </head>
 <body>
 	<h1>Welcome</h1>
-	<p>Welcome to this site.</p>
+	<p>Welcome to this Laravel site.</p>
 	<p>See the <a href="info">Info Page</a>.</p>
 </body>
 </html>
