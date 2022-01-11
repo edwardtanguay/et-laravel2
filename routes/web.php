@@ -35,3 +35,7 @@ Route::get('/about', function () {
 	$colors = array('red', 'green', 'yellow');
 	return view('pages/about', ['message' => 'This is information about the site.', 'colors' => $colors]);
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
